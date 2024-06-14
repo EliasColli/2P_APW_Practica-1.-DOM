@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Formulario</title>
+</head>
+<body>
+    <form name="miFormulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+    <label for="numero">Número (entre 1 y 10):</label>
+    <input type="text" id="numero">
+    <button type="button" onclick="miFuncion()">Validar Número</button>
+    <p id="demo"></p>
+
+    <script>
+       /* function validarFormulario() {
+    let x = document.forms["miFormulario"]["nombre"].value;
+    if (x === "") {
+        alert("Se debe completar el nombre");
+        return false;
+    }
+}
+
+function miFuncion() {
+    let x = document.getElementById("numero").value;
+    let texto;
+    if (isNaN(x) || x < 1 || x > 10) {
+        texto = "Entrada no válida";
+    } else {
+        texto = "Entrada correcta";
+    }
+    document.getElementById("demo").innerHTML = texto;
+}*/
+    </script>
+</body>
+</html>
